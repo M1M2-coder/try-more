@@ -11,9 +11,16 @@
 
 	<properties>
 		<javaee.version>7.0</javaee.version>
+		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
 	<dependencies>
-
+	
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
 
 		<!-- Java EE API -->
 		<dependency>
@@ -23,7 +30,6 @@
 			<scope>provided</scope>
 		</dependency>
 
-
 		<!-- JUNIT -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -32,7 +38,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<finalName>onlineshopping</finalName>
 
